@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+  <title>Mars Mission</title>
+  
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="style.css"> 
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"                   integrity="sha384JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+    
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Mars Mission</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">scrape new data</a></p>
+    </div>
+    <div>
+        <h1>Latest Mars News</h1>
+        <h2>{{listings.title}}</h2>
+        <p>{{listings.news_p}}</p>
+    </div>
+    <!-- Featured Mars Image / Current Weather on Mars / Mars Facts -->
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel">
+                <div class="panel-left">
+                    <h2>Featured Mars Image</h2>
+                    <img src=  {{ listings.featured_image }} alt="" class="featured" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <br>
+            <br>
+            <div class="panel border">
+                <div class="panel-right" >
+                    <h2>Current Weather on Mars</h2>
+                    <p>{{ listings.weather_mars }}</p>
+                </div>
+            </div>
+            <br>
+            <div class="panel">
+                <div class="panel-right" >  
+                    <h2>Mars Facts</h2>
+                    {{ listings.facts|safe }}
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-md-1"></div> -->
+    </div>
+    <!-- Mars Hemispheres -->
+    <br>
+    <br>  
+    <h2 class="hemispheres">Mars Hemispheres</h2>
+    <br>  
+    <div class="row" style="padding-bottom:20px">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5 border">
+            <img src={{ listings.hemisphere_image[0]["Image_Url"] }} alt="" style="width:100%" > 
+            <p class="caption">{{ listings.hemisphere_image[0]["Title"] }}</p>
+        </div>
+        <div class="col-sm-5 border" >
+            <img src={{ listings.hemisphere_image[1]["Image_Url"] }} alt="" style="width:100%" >
+            <p class="caption">{{ listings.hemisphere_image[1]["Title"] }}</p>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5 border" >
+            <img src={{ listings.hemisphere_image[2]["Image_Url"] }} alt="" style="width:100%">
+            <p class="caption">{{ listings.hemisphere_image[2]["Title"] }}</p>
+        </div>
+        <div class="col-sm-5 border" >
+            <img src={{ listings.hemisphere_image[3]["Image_Url"] }} alt="" style="width:100%">
+            <p class="caption">{{ listings.hemisphere_image[3]["Title"] }}</p>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+  
+ </div>   <!-- container   -->
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
